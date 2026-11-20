@@ -8,8 +8,8 @@
 ## Γρήγορη εκκίνηση (demo)
 
 ```bash
-# βάρη INT8 από το Release του repo (ή δημιουργία με prep/quantize_int8.py, LOG.md §4/§10)
-mkdir -p weights && curl -L -o weights/strata_v1_int8.bin <URL του release asset>
+# βάρη INT8 από το Release v1 του repo (σε private repo: κατέβασέ τα από τη σελίδα Releases) (ή δημιουργία με prep/quantize_int8.py, LOG.md §4/§10)
+mkdir -p weights && curl -L -o weights/strata_v1_int8.bin https://github.com/AlexandrosGiann/STRATA_WASM_INT8/releases/download/v1/strata_v1_int8.bin
 ln -sf ../../weights/strata_v1_int8.bin web/weights/strata_v1_int8.bin
 python3 web/serve.py --port 8000              # http://localhost:8000
 python3 web/serve.py --host 0.0.0.0 --port 8080   # τοπικό δίκτυο (LOG.md §9)

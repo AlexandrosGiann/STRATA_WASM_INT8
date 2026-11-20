@@ -1,0 +1,15 @@
+# περιβάλλον / εργαλεία (αναπαράγονται, βλ. LOG.md §10)
+.venv/
+tools/emsdk/
+tools/node_modules/
+tools/emsdk_install.log
+third_party/
+__pycache__/
+*.pyc
+natten-*/
+natten-*.tar.gz
+
+# μεγάλα αρχεία: επίσημα βάρη, INT8 βάρη (>100 MB, ανεβαίνουν ως GitHub Release), πλήρη δείγματα
+/weights/
+web/weights/*.bin
+/data/

@@ -1,0 +1,72 @@
+Warp CUDA warning: Could not find or load the NVIDIA CUDA driver. GPU execution will not be available.
+'[Errno 104] Connection reset by peer' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+'peer closed connection without sending complete message body (received 19125371 bytes, expected 20744289)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+'peer closed connection without sending complete message body (received 13319839 bytes, expected 20644220)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+Retrying in 1s [Retry 1/5].
+Retrying in 1s [Retry 1/5].
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 10488466 bytes, expected 20726204)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+'peer closed connection without sending complete message body (received 12760991 bytes, expected 20708625)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+Retrying in 1s [Retry 1/5].
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 4403884 bytes, expected 20755538)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 17383985 bytes, expected 20566410)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 15020159 bytes, expected 20736340)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1728/0/0
+Retrying in 1s [Retry 1/5].
+athens: (37.98, 23.73) -> face 0, pixel (1944, 1563); region x[1896:1992] y[1515:1611]
+  centre cell lat/lon = 37.978, 23.708
+  50/1033 fields, 486s
+  100/1033 fields, 774s
+  150/1033 fields, 1094s
+  200/1033 fields, 1396s
+  250/1033 fields, 1709s
+  300/1033 fields, 1996s
+  350/1033 fields, 2304s
+  400/1033 fields, 2586s
+  450/1033 fields, 2832s
+  500/1033 fields, 3127s
+'[Errno 104] Connection reset by peer' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/omega/c/1731/0/0
+'peer closed connection without sending complete message body (received 16206917 bytes, expected 18688894)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/z_mid/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 10347327 bytes, expected 18789409)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/z_mid/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 3997369 bytes, expected 20837369)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/omega/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 13577118 bytes, expected 18786664)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/z_mid/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 15939671 bytes, expected 19035476)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/z_mid/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 11031534 bytes, expected 18519766)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/z_mid/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 15638374 bytes, expected 19210746)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/z_mid/c/1731/0/0
+Retrying in 1s [Retry 1/5].
+  550/1033 fields, 3380s
+  600/1033 fields, 3620s
+  650/1033 fields, 3879s
+  700/1033 fields, 4123s
+  750/1033 fields, 4372s
+'[Errno 104] Connection reset by peer' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+'peer closed connection without sending complete message body (received 2852230 bytes, expected 20756639)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 7588732 bytes, expected 20701792)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 2470925 bytes, expected 20765596)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 7650462 bytes, expected 20709980)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 7199532 bytes, expected 20744587)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+Retrying in 1s [Retry 1/5].
+'peer closed connection without sending complete message body (received 10870254 bytes, expected 20726322)' thrown while requesting GET https://huggingface.co/datasets/nvidia/STRATA-SCREAM-sdecadal/resolve/main/V/c/1733/0/0
+Retrying in 1s [Retry 1/5].
+Retrying in 1s [Retry 1/5].
+  800/1033 fields, 4651s
+  850/1033 fields, 4927s
+  900/1033 fields, 5185s
+  950/1033 fields, 5421s
+  1000/1033 fields, 5706s
+  1033/1033 fields, 5770s
+wrote /home/alex/Desktop/STRATA_WASM_INT8/data/athens/sample.nc (38.4 MB)
+EXIT 0

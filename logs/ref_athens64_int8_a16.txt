@@ -1,0 +1,11 @@
+Warp CUDA warning: Could not find or load the NVIDIA CUDA driver. GPU execution will not be available.
+model loaded in 80s
+INT8 emulation: replaced 140 linear layers (activations 16-bit per token)
+step 1/6: 188.5s
+step 2/6: 186.8s
+step 3/6: 185.5s
+step 4/6: 185.0s
+step 5/6: 188.2s
+step 6/6: 194.4s
+wrote /home/alex/Desktop/STRATA_WASM_INT8/data/athens64/reference_int8_a16.nc; mean step 188.1s
+EXIT 0

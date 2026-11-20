@@ -1,0 +1,422 @@
+Warp CUDA warning: Could not find or load the NVIDIA CUDA driver. GPU execution will not be available.
+W1119 22:17:00.845000 18759 torch/fx/experimental/symbolic_shapes.py:9273] Unable to find user code corresponding to {u0}
+
+
+
+def forward(self, arg0_1: "f32[1024, 13, 1, 4, 4]", arg1_1: "f32[1024]", arg2_1: "f32[3072, 1024]", arg3_1: "f32[3072]", arg4_1: "f32[1024, 1024]", arg5_1: "f32[1024]", arg6_1: "f32[1024, 1024]", arg7_1: "f32[1024]", arg8_1: "f32[4096, 1024]", arg9_1: "f32[4096]", arg10_1: "f32[1024, 4096]", arg11_1: "f32[1024]", arg12_1: "f32[3072, 1024]", arg13_1: "f32[3072]", arg14_1: "f32[1024, 1024]", arg15_1: "f32[1024]", arg16_1: "f32[1024, 1024]", arg17_1: "f32[1024]", arg18_1: "f32[4096, 1024]", arg19_1: "f32[4096]", arg20_1: "f32[1024, 4096]", arg21_1: "f32[1024]", arg22_1: "f32[3072, 1024]", arg23_1: "f32[3072]", arg24_1: "f32[1024, 1024]", arg25_1: "f32[1024]", arg26_1: "f32[1024, 1024]", arg27_1: "f32[1024]", arg28_1: "f32[4096, 1024]", arg29_1: "f32[4096]", arg30_1: "f32[1024, 4096]", arg31_1: "f32[1024]", arg32_1: "f32[3072, 1024]", arg33_1: "f32[3072]", arg34_1: "f32[1024, 1024]", arg35_1: "f32[1024]", arg36_1: "f32[1024, 1024]", arg37_1: "f32[1024]", arg38_1: "f32[4096, 1024]", arg39_1: "f32[4096]", arg40_1: "f32[1024, 4096]", arg41_1: "f32[1024]", arg42_1: "f32[3072, 1024]", arg43_1: "f32[3072]", arg44_1: "f32[1024, 1024]", arg45_1: "f32[1024]", arg46_1: "f32[1024, 1024]", arg47_1: "f32[1024]", arg48_1: "f32[4096, 1024]", arg49_1: "f32[4096]", arg50_1: "f32[1024, 4096]", arg51_1: "f32[1024]", arg52_1: "f32[3072, 1024]", arg53_1: "f32[3072]", arg54_1: "f32[1024, 1024]", arg55_1: "f32[1024]", arg56_1: "f32[1024, 1024]", arg57_1: "f32[1024]", arg58_1: "f32[4096, 1024]", arg59_1: "f32[4096]", arg60_1: "f32[1024, 4096]", arg61_1: "f32[1024]", arg62_1: "f32[3072, 1024]", arg63_1: "f32[3072]", arg64_1: "f32[1024, 1024]", arg65_1: "f32[1024]", arg66_1: "f32[1024, 1024]", arg67_1: "f32[1024]", arg68_1: "f32[4096, 1024]", arg69_1: "f32[4096]", arg70_1: "f32[1024, 4096]", arg71_1: "f32[1024]", arg72_1: "f32[3072, 1024]", arg73_1: "f32[3072]", arg74_1: "f32[1024, 1024]", arg75_1: "f32[1024]", arg76_1: "f32[1024, 1024]", arg77_1: "f32[1024]", arg78_1: "f32[4096, 1024]", arg79_1: "f32[4096]", arg80_1: "f32[1024, 4096]", arg81_1: "f32[1024]", arg82_1: "f32[3072, 1024]", arg83_1: "f32[3072]", arg84_1: "f32[1024, 1024]", arg85_1: "f32[1024]", arg86_1: "f32[1024, 1024]", arg87_1: "f32[1024]", arg88_1: "f32[4096, 1024]", arg89_1: "f32[4096]", arg90_1: "f32[1024, 4096]", arg91_1: "f32[1024]", arg92_1: "f32[3072, 1024]", arg93_1: "f32[3072]", arg94_1: "f32[1024, 1024]", arg95_1: "f32[1024]", arg96_1: "f32[1024, 1024]", arg97_1: "f32[1024]", arg98_1: "f32[4096, 1024]", arg99_1: "f32[4096]", arg100_1: "f32[1024, 4096]", arg101_1: "f32[1024]", arg102_1: "f32[3072, 1024]", arg103_1: "f32[3072]", arg104_1: "f32[1024, 1024]", arg105_1: "f32[1024]", arg106_1: "f32[1024, 1024]", arg107_1: "f32[1024]", arg108_1: "f32[4096, 1024]", arg109_1: "f32[4096]", arg110_1: "f32[1024, 4096]", arg111_1: "f32[1024]", arg112_1: "f32[3072, 1024]", arg113_1: "f32[3072]", arg114_1: "f32[1024, 1024]", arg115_1: "f32[1024]", arg116_1: "f32[1024, 1024]", arg117_1: "f32[1024]", arg118_1: "f32[4096, 1024]", arg119_1: "f32[4096]", arg120_1: "f32[1024, 4096]", arg121_1: "f32[1024]", arg122_1: "f32[3072, 1024]", arg123_1: "f32[3072]", arg124_1: "f32[1024, 1024]", arg125_1: "f32[1024]", arg126_1: "f32[1024, 1024]", arg127_1: "f32[1024]", arg128_1: "f32[4096, 1024]", arg129_1: "f32[4096]", arg130_1: "f32[1024, 4096]", arg131_1: "f32[1024]", arg132_1: "f32[3072, 1024]", arg133_1: "f32[3072]", arg134_1: "f32[1024, 1024]", arg135_1: "f32[1024]", arg136_1: "f32[1024, 1024]", arg137_1: "f32[1024]", arg138_1: "f32[4096, 1024]", arg139_1: "f32[4096]", arg140_1: "f32[1024, 4096]", arg141_1: "f32[1024]", arg142_1: "f32[3072, 1024]", arg143_1: "f32[3072]", arg144_1: "f32[1024, 1024]", arg145_1: "f32[1024]", arg146_1: "f32[1024, 1024]", arg147_1: "f32[1024]", arg148_1: "f32[4096, 1024]", arg149_1: "f32[4096]", arg150_1: "f32[1024, 4096]", arg151_1: "f32[1024]", arg152_1: "f32[3072, 1024]", arg153_1: "f32[3072]", arg154_1: "f32[1024, 1024]", arg155_1: "f32[1024]", arg156_1: "f32[1024, 1024]", arg157_1: "f32[1024]", arg158_1: "f32[4096, 1024]", arg159_1: "f32[4096]", arg160_1: "f32[1024, 4096]", arg161_1: "f32[1024]", arg162_1: "f32[3072, 1024]", arg163_1: "f32[3072]", arg164_1: "f32[1024, 1024]", arg165_1: "f32[1024]", arg166_1: "f32[1024, 1024]", arg167_1: "f32[1024]", arg168_1: "f32[4096, 1024]", arg169_1: "f32[4096]", arg170_1: "f32[1024, 4096]", arg171_1: "f32[1024]", arg172_1: "f32[3072, 1024]", arg173_1: "f32[3072]", arg174_1: "f32[1024, 1024]", arg175_1: "f32[1024]", arg176_1: "f32[1024, 1024]", arg177_1: "f32[1024]", arg178_1: "f32[4096, 1024]", arg179_1: "f32[4096]", arg180_1: "f32[1024, 4096]", arg181_1: "f32[1024]", arg182_1: "f32[3072, 1024]", arg183_1: "f32[3072]", arg184_1: "f32[1024, 1024]", arg185_1: "f32[1024]", arg186_1: "f32[1024, 1024]", arg187_1: "f32[1024]", arg188_1: "f32[4096, 1024]", arg189_1: "f32[4096]", arg190_1: "f32[1024, 4096]", arg191_1: "f32[1024]", arg192_1: "f32[3072, 1024]", arg193_1: "f32[3072]", arg194_1: "f32[1024, 1024]", arg195_1: "f32[1024]", arg196_1: "f32[1024, 1024]", arg197_1: "f32[1024]", arg198_1: "f32[4096, 1024]", arg199_1: "f32[4096]", arg200_1: "f32[1024, 4096]", arg201_1: "f32[1024]", arg202_1: "f32[3072, 1024]", arg203_1: "f32[3072]", arg204_1: "f32[1024, 1024]", arg205_1: "f32[1024]", arg206_1: "f32[1024, 1024]", arg207_1: "f32[1024]", arg208_1: "f32[4096, 1024]", arg209_1: "f32[4096]", arg210_1: "f32[1024, 4096]", arg211_1: "f32[1024]", arg212_1: "f32[3072, 1024]", arg213_1: "f32[3072]", arg214_1: "f32[1024, 1024]", arg215_1: "f32[1024]", arg216_1: "f32[1024, 1024]", arg217_1: "f32[1024]", arg218_1: "f32[4096, 1024]", arg219_1: "f32[4096]", arg220_1: "f32[1024, 4096]", arg221_1: "f32[1024]", arg222_1: "f32[3072, 1024]", arg223_1: "f32[3072]", arg224_1: "f32[1024, 1024]", arg225_1: "f32[1024]", arg226_1: "f32[1024, 1024]", arg227_1: "f32[1024]", arg228_1: "f32[4096, 1024]", arg229_1: "f32[4096]", arg230_1: "f32[1024, 4096]", arg231_1: "f32[1024]", arg232_1: "f32[3072, 1024]", arg233_1: "f32[3072]", arg234_1: "f32[1024, 1024]", arg235_1: "f32[1024]", arg236_1: "f32[1024, 1024]", arg237_1: "f32[1024]", arg238_1: "f32[4096, 1024]", arg239_1: "f32[4096]", arg240_1: "f32[1024, 4096]", arg241_1: "f32[1024]", arg242_1: "f32[128, 13, 1, 1, 1]", arg243_1: "f32[128]", arg244_1: "f32[384, 128]", arg245_1: "f32[384]", arg246_1: "f32[128, 128]", arg247_1: "f32[128]", arg248_1: "f32[512, 128]", arg249_1: "f32[512]", arg250_1: "f32[128, 512]", arg251_1: "f32[128]", arg252_1: "f32[1024, 1, 5, 5]", arg253_1: "f32[1024]", arg254_1: "f32[768, 1024]", arg255_1: "f32[768]", arg256_1: "f32[384, 128]", arg257_1: "f32[384]", arg258_1: "f32[128, 128]", arg259_1: "f32[128]", arg260_1: "f32[512, 128]", arg261_1: "f32[512]", arg262_1: "f32[128, 512]", arg263_1: "f32[128]", arg264_1: "f32[1024, 1, 5, 5]", arg265_1: "f32[1024]", arg266_1: "f32[768, 1024]", arg267_1: "f32[768]", arg268_1: "f32[384, 128]", arg269_1: "f32[384]", arg270_1: "f32[128, 128]", arg271_1: "f32[128]", arg272_1: "f32[512, 128]", arg273_1: "f32[512]", arg274_1: "f32[128, 512]", arg275_1: "f32[128]", arg276_1: "f32[1024, 1, 5, 5]", arg277_1: "f32[1024]", arg278_1: "f32[768, 1024]", arg279_1: "f32[768]", arg280_1: "f32[384, 128]", arg281_1: "f32[384]", arg282_1: "f32[128, 128]", arg283_1: "f32[128]", arg284_1: "f32[512, 128]", arg285_1: "f32[512]", arg286_1: "f32[128, 512]", arg287_1: "f32[128]", arg288_1: "f32[1024, 1, 5, 5]", arg289_1: "f32[1024]", arg290_1: "f32[768, 1024]", arg291_1: "f32[768]", arg292_1: "f32[10, 128]", arg293_1: "f32[10]", arg294_1: "f32[0]", arg295_1: "f32[0]", arg296_1: "f32[1, 13, 24, 40, 40]", arg297_1: "f32[1, 2, 40, 40]"):
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/conv.py:735 in forward, code: return self._conv_forward(input, self.weight, self.bias)
+    conv3d: "f32[1, 1024, 24, 10, 10]" = torch.ops.aten.conv3d.default(arg296_1, arg0_1, arg1_1, [1, 4, 4]);  arg296_1 = arg0_1 = arg1_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/strata.py:499 in forward, code: backbone_cond, backbone_dhw = self.backbone.forward_tokens(x, pos)
+    permute: "f32[1, 24, 10, 10, 1024]" = torch.ops.aten.permute.default(conv3d, [0, 2, 3, 4, 1]);  conv3d = None
+    reshape: "f32[1, 2400, 1024]" = torch.ops.aten.reshape.default(permute, [1, 2400, 1024]);  permute = None
+    select: "f32[1, 40, 40]" = torch.ops.aten.select.int(arg297_1, 1, 0)
+    select_1: "f32[1, 40, 40]" = torch.ops.aten.select.int(arg297_1, 1, 1);  arg297_1 = None
+    cos: "f32[1, 40, 40]" = torch.ops.aten.cos.default(select)
+    cos_1: "f32[1, 40, 40]" = torch.ops.aten.cos.default(select_1)
+    mul: "f32[1, 40, 40]" = torch.ops.aten.mul.Tensor(cos, cos_1);  cos_1 = None
+    mean: "f32[1, 1, 1]" = torch.ops.aten.mean.dim(mul, [1, 2], True);  mul = None
+    sin: "f32[1, 40, 40]" = torch.ops.aten.sin.default(select_1)
+    mul_1: "f32[1, 40, 40]" = torch.ops.aten.mul.Tensor(cos, sin);  cos = sin = None
+    mean_1: "f32[1, 1, 1]" = torch.ops.aten.mean.dim(mul_1, [1, 2], True);  mul_1 = None
+    sin_1: "f32[1, 40, 40]" = torch.ops.aten.sin.default(select)
+    mean_2: "f32[1, 1, 1]" = torch.ops.aten.mean.dim(sin_1, [1, 2], True);  sin_1 = None
+    hypot: "f32[1, 1, 1]" = torch.ops.aten.hypot.default(mean, mean_1)
+    atan2: "f32[1, 1, 1]" = torch.ops.aten.atan2.default(mean_2, hypot);  mean_2 = hypot = None
+    atan2_1: "f32[1, 1, 1]" = torch.ops.aten.atan2.default(mean_1, mean);  mean_1 = mean = None
+    reshape_1: "f32[1, 10, 4, 10, 4]" = torch.ops.aten.reshape.default(select, [1, 10, 4, 10, 4]);  select = None
+    permute_1: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.permute.default(reshape_1, [0, 1, 3, 2, 4]);  reshape_1 = None
+    reshape_2: "f32[1, 10, 4, 10, 4]" = torch.ops.aten.reshape.default(select_1, [1, 10, 4, 10, 4]);  select_1 = None
+    permute_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.permute.default(reshape_2, [0, 1, 3, 2, 4]);  reshape_2 = None
+    cos_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.cos.default(permute_1)
+    cos_3: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.cos.default(permute_2)
+    mul_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.mul.Tensor(cos_2, cos_3);  cos_3 = None
+    mean_3: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.mean.dim(mul_2, [3, 4], True);  mul_2 = None
+    sin_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.sin.default(permute_2);  permute_2 = None
+    mul_3: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.mul.Tensor(cos_2, sin_2);  cos_2 = sin_2 = None
+    mean_4: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.mean.dim(mul_3, [3, 4], True);  mul_3 = None
+    sin_3: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.sin.default(permute_1);  permute_1 = None
+    mean_5: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.mean.dim(sin_3, [3, 4], True);  sin_3 = None
+    hypot_1: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.hypot.default(mean_3, mean_4)
+    atan2_2: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.atan2.default(mean_5, hypot_1);  mean_5 = hypot_1 = None
+    atan2_3: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.atan2.default(mean_4, mean_3);  mean_4 = mean_3 = None
+    squeeze: "f32[1, 10, 10]" = torch.ops.aten.squeeze.dims(atan2_2, [-2, -1]);  atan2_2 = None
+    squeeze_1: "f32[1, 10, 10]" = torch.ops.aten.squeeze.dims(atan2_3, [-2, -1]);  atan2_3 = None
+    sub: "f32[1, 10, 10]" = torch.ops.aten.sub.Tensor(squeeze_1, atan2_1);  squeeze_1 = atan2_1 = None
+    sin_4: "f32[1, 1, 1]" = torch.ops.aten.sin.default(atan2)
+    sin_5: "f32[1, 10, 10]" = torch.ops.aten.sin.default(squeeze)
+    mul_4: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(sin_4, sin_5);  sin_4 = sin_5 = None
+    cos_4: "f32[1, 1, 1]" = torch.ops.aten.cos.default(atan2)
+    cos_5: "f32[1, 10, 10]" = torch.ops.aten.cos.default(squeeze)
+    mul_5: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(cos_4, cos_5);  cos_4 = cos_5 = None
+    cos_6: "f32[1, 10, 10]" = torch.ops.aten.cos.default(sub)
+    mul_6: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_5, cos_6);  mul_5 = cos_6 = None
+    add: "f32[1, 10, 10]" = torch.ops.aten.add.Tensor(mul_4, mul_6);  mul_4 = mul_6 = None
+    add_1: "f32[1, 10, 10]" = torch.ops.aten.add.Tensor(add, 1.0);  add = None
+    clamp_min: "f32[1, 10, 10]" = torch.ops.aten.clamp_min.default(add_1, 1e-06);  add_1 = None
+    reciprocal: "f32[1, 10, 10]" = torch.ops.aten.reciprocal.default(clamp_min);  clamp_min = None
+    mul_7: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(reciprocal, 2.0);  reciprocal = None
+    cos_7: "f32[1, 10, 10]" = torch.ops.aten.cos.default(squeeze)
+    mul_8: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_7, cos_7);  cos_7 = None
+    sin_6: "f32[1, 10, 10]" = torch.ops.aten.sin.default(sub)
+    mul_9: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_8, sin_6);  mul_8 = sin_6 = None
+    cos_8: "f32[1, 1, 1]" = torch.ops.aten.cos.default(atan2)
+    sin_7: "f32[1, 10, 10]" = torch.ops.aten.sin.default(squeeze)
+    mul_10: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(cos_8, sin_7);  cos_8 = sin_7 = None
+    sin_8: "f32[1, 1, 1]" = torch.ops.aten.sin.default(atan2);  atan2 = None
+    cos_9: "f32[1, 10, 10]" = torch.ops.aten.cos.default(squeeze);  squeeze = None
+    mul_11: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(sin_8, cos_9);  sin_8 = cos_9 = None
+    cos_10: "f32[1, 10, 10]" = torch.ops.aten.cos.default(sub);  sub = None
+    mul_12: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_11, cos_10);  mul_11 = cos_10 = None
+    sub_1: "f32[1, 10, 10]" = torch.ops.aten.sub.Tensor(mul_10, mul_12);  mul_10 = mul_12 = None
+    mul_13: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_7, sub_1);  mul_7 = sub_1 = None
+    div: "f32[1, 10, 10]" = torch.ops.aten.div.Tensor(mul_9, 0.003997369952915971);  mul_9 = None
+    div_1: "f32[1, 10, 10]" = torch.ops.aten.div.Tensor(mul_13, 0.003997369952915971);  mul_13 = None
+    stack: "f32[1, 10, 10, 2]" = torch.ops.aten.stack.default([div, div_1], -1);  div = div_1 = None
+    reshape_3: "f32[1, 100, 2]" = torch.ops.aten.reshape.default(stack, [1, 100, 2]);  stack = None
+    unsqueeze: "f32[1, 1, 100, 2]" = torch.ops.aten.unsqueeze.default(reshape_3, 1);  reshape_3 = None
+    expand: "f32[1, 24, 100, 2]" = torch.ops.aten.expand.default(unsqueeze, [-1, 24, -1, -1]);  unsqueeze = None
+    reshape_4: "f32[1, 2400, 2]" = torch.ops.aten.reshape.default(expand, [1, 2400, 2]);  expand = None
+    select_2: "f32[1, 2400]" = torch.ops.aten.select.int(reshape_4, 2, 0)
+    select_3: "f32[1, 2400]" = torch.ops.aten.select.int(reshape_4, 2, 1);  reshape_4 = None
+    arange: "f32[16]" = torch.ops.aten.arange.start_step(0, 32, 2, dtype = torch.float32, device = device(type='cpu'), pin_memory = False)
+    neg: "f32[16]" = torch.ops.aten.neg.default(arange);  arange = None
+    div_2: "f32[16]" = torch.ops.aten.div.Tensor(neg, 32);  neg = None
+    pow_1: "f32[16]" = torch.ops.aten.pow.Scalar(100.0, div_2);  div_2 = None
+    to: "f32[1, 2400]" = torch.ops.aten.to.dtype(select_2, torch.float32);  select_2 = None
+    unsqueeze_1: "f32[1, 2400, 1]" = torch.ops.aten.unsqueeze.default(to, -1);  to = None
+    mul_14: "f32[1, 2400, 16]" = torch.ops.aten.mul.Tensor(unsqueeze_1, pow_1);  unsqueeze_1 = pow_1 = None
+    cos_11: "f32[1, 2400, 16]" = torch.ops.aten.cos.default(mul_14)
+    repeat_interleave: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(cos_11, 2, -1);  cos_11 = None
+    sin_9: "f32[1, 2400, 16]" = torch.ops.aten.sin.default(mul_14);  mul_14 = None
+    repeat_interleave_1: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(sin_9, 2, -1);  sin_9 = None
+    arange_1: "f32[16]" = torch.ops.aten.arange.start_step(0, 32, 2, dtype = torch.float32, device = device(type='cpu'), pin_memory = False)
+    neg_1: "f32[16]" = torch.ops.aten.neg.default(arange_1);  arange_1 = None
+    div_3: "f32[16]" = torch.ops.aten.div.Tensor(neg_1, 32);  neg_1 = None
+    pow_2: "f32[16]" = torch.ops.aten.pow.Scalar(100.0, div_3);  div_3 = None
+    to_1: "f32[1, 2400]" = torch.ops.aten.to.dtype(select_3, torch.float32);  select_3 = None
+    unsqueeze_2: "f32[1, 2400, 1]" = torch.ops.aten.unsqueeze.default(to_1, -1);  to_1 = None
+    mul_15: "f32[1, 2400, 16]" = torch.ops.aten.mul.Tensor(unsqueeze_2, pow_2);  unsqueeze_2 = pow_2 = None
+    cos_12: "f32[1, 2400, 16]" = torch.ops.aten.cos.default(mul_15)
+    repeat_interleave_2: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(cos_12, 2, -1);  cos_12 = None
+    sin_10: "f32[1, 2400, 16]" = torch.ops.aten.sin.default(mul_15);  mul_15 = None
+    repeat_interleave_3: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(sin_10, 2, -1);  sin_10 = None
+    cat: "f32[1, 2400, 64]" = torch.ops.aten.cat.default([repeat_interleave, repeat_interleave_2], -1);  repeat_interleave = repeat_interleave_2 = None
+    cat_1: "f32[1, 2400, 64]" = torch.ops.aten.cat.default([repeat_interleave_1, repeat_interleave_3], -1);  repeat_interleave_1 = repeat_interleave_3 = None
+    unsqueeze_3: "f32[1, 1, 2400, 64]" = torch.ops.aten.unsqueeze.default(cat, 1);  cat = None
+    unsqueeze_4: "f32[1, 1, 2400, 64]" = torch.ops.aten.unsqueeze.default(cat_1, 1);  cat_1 = None
+    _enter_autocast = torch.amp.autocast_mode._enter_autocast('cuda', torch.bfloat16, False, False)
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py:228 in forward, code: return F.layer_norm(
+    layer_norm: "f32[1, 2400, 1024]" = torch.ops.aten.layer_norm.default(reshape, [1024], None, None, 1e-06, False);  reshape = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py:134 in forward, code: return F.linear(input, self.weight, self.bias)
+    linear: "f32[1, 2400, 1024]" = torch.ops.aten.linear.default(layer_norm, arg6_1, arg7_1);  arg6_1 = arg7_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:216 in forward, code: gate = torch.sigmoid(self.gate_proj(x))  # (B, N, C)
+    sigmoid: "f32[1, 2400, 1024]" = torch.ops.aten.sigmoid.default(linear);  linear = sigmoid = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py:134 in forward, code: return F.linear(input, self.weight, self.bias)
+    linear_1: "f32[1, 2400, 3072]" = torch.ops.aten.linear.default(layer_norm, arg2_1, arg3_1);  layer_norm = arg2_1 = arg3_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:219 in forward, code: qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim)
+    reshape_5: "f32[1, 2400, 3, 16, 64]" = torch.ops.aten.reshape.default(linear_1, [1, 2400, 3, 16, 64]);  linear_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:220 in forward, code: q, k, v = qkv.permute(2, 0, 3, 1, 4).unbind(0)
+    permute_3: "f32[3, 1, 16, 2400, 64]" = torch.ops.aten.permute.default(reshape_5, [2, 0, 3, 1, 4]);  reshape_5 = None
+    unbind = torch.ops.aten.unbind.int(permute_3);  permute_3 = None
+    getitem: "f32[1, 16, 2400, 64]" = unbind[0]
+    getitem_1: "f32[1, 16, 2400, 64]" = unbind[1]
+    getitem_2: "f32[1, 16, 2400, 64]" = unbind[2];  unbind = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py:427 in forward, code: return F.rms_norm(x, self.normalized_shape, self.weight, self.eps)
+    rms_norm: "f32[1, 16, 2400, 64]" = torch.ops.aten.rms_norm.default(getitem, [64], None, 1e-06);  getitem = None
+    rms_norm_1: "f32[1, 16, 2400, 64]" = torch.ops.aten.rms_norm.default(getitem_1, [64], None, 1e-06);  getitem_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:226 in forward, code: q = apply_rotary_pos_emb(q, cos, sin)
+    to_2: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(rms_norm, torch.float32);  rms_norm = None
+    slice_1: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_2, 3, 0, 9223372036854775807, 2)
+    slice_2: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_2, 3, 1, 9223372036854775807, 2)
+    neg_2: "f32[1, 16, 2400, 32]" = torch.ops.aten.neg.default(slice_2);  slice_2 = None
+    stack_1: "f32[1, 16, 2400, 32, 2]" = torch.ops.aten.stack.default([neg_2, slice_1], -1);  neg_2 = slice_1 = None
+    flatten: "f32[1, 16, 2400, 64]" = torch.ops.aten.flatten.using_ints(stack_1, -2);  stack_1 = None
+    mul_16: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(to_2, unsqueeze_3);  to_2 = None
+    mul_17: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(flatten, unsqueeze_4);  flatten = None
+    add_2: "f32[1, 16, 2400, 64]" = torch.ops.aten.add.Tensor(mul_16, mul_17);  mul_16 = mul_17 = None
+    to_3: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(add_2, torch.float32);  add_2 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:227 in forward, code: k = apply_rotary_pos_emb(k, cos, sin)
+    to_4: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(rms_norm_1, torch.float32);  rms_norm_1 = None
+    slice_3: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_4, 3, 0, 9223372036854775807, 2)
+    slice_4: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_4, 3, 1, 9223372036854775807, 2)
+    neg_3: "f32[1, 16, 2400, 32]" = torch.ops.aten.neg.default(slice_4);  slice_4 = None
+    stack_2: "f32[1, 16, 2400, 32, 2]" = torch.ops.aten.stack.default([neg_3, slice_3], -1);  neg_3 = slice_3 = None
+    flatten_1: "f32[1, 16, 2400, 64]" = torch.ops.aten.flatten.using_ints(stack_2, -2);  stack_2 = None
+    mul_18: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(to_4, unsqueeze_3);  to_4 = unsqueeze_3 = None
+    mul_19: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(flatten_1, unsqueeze_4);  flatten_1 = unsqueeze_4 = None
+    add_3: "f32[1, 16, 2400, 64]" = torch.ops.aten.add.Tensor(mul_18, mul_19);  mul_18 = mul_19 = None
+    to_5: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(add_3, torch.float32);  add_3 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:230 in forward, code: q = q.to(v.dtype)
+    to_6: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(to_3, torch.float32);  to_3 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:231 in forward, code: k = k.to(v.dtype)
+    to_7: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(to_5, torch.float32);  to_5 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:272 in forward, code: q, k, v = (
+    reshape_6: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.reshape.default(to_6, [1, 16, 24, 10, 10, 64]);  to_6 = None
+    permute_4: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.permute.default(reshape_6, [0, 2, 3, 4, 1, 5]);  reshape_6 = None
+    reshape_7: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.reshape.default(to_7, [1, 16, 24, 10, 10, 64]);  to_7 = None
+    permute_5: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.permute.default(reshape_7, [0, 2, 3, 4, 1, 5]);  reshape_7 = None
+    reshape_8: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.reshape.default(getitem_2, [1, 16, 24, 10, 10, 64]);  getitem_2 = None
+    permute_6: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.permute.default(reshape_8, [0, 2, 3, 4, 1, 5]);  reshape_8 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:276 in forward, code: out = _na3d_func(
+    empty_like: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.empty_like.default(permute_4, pin_memory = False);  empty_like = None
+    permute_7: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.permute.default(permute_4, [0, 4, 1, 2, 3, 5]);  permute_4 = permute_7 = None
+    permute_8: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.permute.default(permute_5, [0, 4, 1, 2, 3, 5]);  permute_5 = permute_8 = None
+    permute_9: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.permute.default(permute_6, [0, 4, 1, 2, 3, 5]);  permute_6 = permute_9 = None
+    arange_2: "i64[24]" = torch.ops.aten.arange.default(24, device = device(type='cpu'), pin_memory = False)
+    sub_2: "i64[24]" = torch.ops.aten.sub.Tensor(arange_2, 4);  arange_2 = None
+    clamp: "i64[24]" = torch.ops.aten.clamp.default(sub_2, 0, 15);  sub_2 = None
+    select_4: "i64[]" = torch.ops.aten.select.int(clamp, 0, 0);  clamp = None
+    item: "Sym(u0)" = torch.ops.aten.item.default(select_4);  select_4 = item = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/strata.py:499 in forward, code: backbone_cond, backbone_dhw = self.backbone.forward_tokens(x, pos)
+    _exit_autocast = torch.amp.autocast_mode._exit_autocast(_enter_autocast);  _enter_autocast = _exit_autocast = None
+    
+
+
+
+def forward(self, arg0_1: "f32[1024, 13, 1, 4, 4]", arg1_1: "f32[1024]", arg2_1: "f32[3072, 1024]", arg3_1: "f32[3072]", arg4_1: "f32[1024, 1024]", arg5_1: "f32[1024]", arg6_1: "f32[1024, 1024]", arg7_1: "f32[1024]", arg8_1: "f32[4096, 1024]", arg9_1: "f32[4096]", arg10_1: "f32[1024, 4096]", arg11_1: "f32[1024]", arg12_1: "f32[3072, 1024]", arg13_1: "f32[3072]", arg14_1: "f32[1024, 1024]", arg15_1: "f32[1024]", arg16_1: "f32[1024, 1024]", arg17_1: "f32[1024]", arg18_1: "f32[4096, 1024]", arg19_1: "f32[4096]", arg20_1: "f32[1024, 4096]", arg21_1: "f32[1024]", arg22_1: "f32[3072, 1024]", arg23_1: "f32[3072]", arg24_1: "f32[1024, 1024]", arg25_1: "f32[1024]", arg26_1: "f32[1024, 1024]", arg27_1: "f32[1024]", arg28_1: "f32[4096, 1024]", arg29_1: "f32[4096]", arg30_1: "f32[1024, 4096]", arg31_1: "f32[1024]", arg32_1: "f32[3072, 1024]", arg33_1: "f32[3072]", arg34_1: "f32[1024, 1024]", arg35_1: "f32[1024]", arg36_1: "f32[1024, 1024]", arg37_1: "f32[1024]", arg38_1: "f32[4096, 1024]", arg39_1: "f32[4096]", arg40_1: "f32[1024, 4096]", arg41_1: "f32[1024]", arg42_1: "f32[3072, 1024]", arg43_1: "f32[3072]", arg44_1: "f32[1024, 1024]", arg45_1: "f32[1024]", arg46_1: "f32[1024, 1024]", arg47_1: "f32[1024]", arg48_1: "f32[4096, 1024]", arg49_1: "f32[4096]", arg50_1: "f32[1024, 4096]", arg51_1: "f32[1024]", arg52_1: "f32[3072, 1024]", arg53_1: "f32[3072]", arg54_1: "f32[1024, 1024]", arg55_1: "f32[1024]", arg56_1: "f32[1024, 1024]", arg57_1: "f32[1024]", arg58_1: "f32[4096, 1024]", arg59_1: "f32[4096]", arg60_1: "f32[1024, 4096]", arg61_1: "f32[1024]", arg62_1: "f32[3072, 1024]", arg63_1: "f32[3072]", arg64_1: "f32[1024, 1024]", arg65_1: "f32[1024]", arg66_1: "f32[1024, 1024]", arg67_1: "f32[1024]", arg68_1: "f32[4096, 1024]", arg69_1: "f32[4096]", arg70_1: "f32[1024, 4096]", arg71_1: "f32[1024]", arg72_1: "f32[3072, 1024]", arg73_1: "f32[3072]", arg74_1: "f32[1024, 1024]", arg75_1: "f32[1024]", arg76_1: "f32[1024, 1024]", arg77_1: "f32[1024]", arg78_1: "f32[4096, 1024]", arg79_1: "f32[4096]", arg80_1: "f32[1024, 4096]", arg81_1: "f32[1024]", arg82_1: "f32[3072, 1024]", arg83_1: "f32[3072]", arg84_1: "f32[1024, 1024]", arg85_1: "f32[1024]", arg86_1: "f32[1024, 1024]", arg87_1: "f32[1024]", arg88_1: "f32[4096, 1024]", arg89_1: "f32[4096]", arg90_1: "f32[1024, 4096]", arg91_1: "f32[1024]", arg92_1: "f32[3072, 1024]", arg93_1: "f32[3072]", arg94_1: "f32[1024, 1024]", arg95_1: "f32[1024]", arg96_1: "f32[1024, 1024]", arg97_1: "f32[1024]", arg98_1: "f32[4096, 1024]", arg99_1: "f32[4096]", arg100_1: "f32[1024, 4096]", arg101_1: "f32[1024]", arg102_1: "f32[3072, 1024]", arg103_1: "f32[3072]", arg104_1: "f32[1024, 1024]", arg105_1: "f32[1024]", arg106_1: "f32[1024, 1024]", arg107_1: "f32[1024]", arg108_1: "f32[4096, 1024]", arg109_1: "f32[4096]", arg110_1: "f32[1024, 4096]", arg111_1: "f32[1024]", arg112_1: "f32[3072, 1024]", arg113_1: "f32[3072]", arg114_1: "f32[1024, 1024]", arg115_1: "f32[1024]", arg116_1: "f32[1024, 1024]", arg117_1: "f32[1024]", arg118_1: "f32[4096, 1024]", arg119_1: "f32[4096]", arg120_1: "f32[1024, 4096]", arg121_1: "f32[1024]", arg122_1: "f32[3072, 1024]", arg123_1: "f32[3072]", arg124_1: "f32[1024, 1024]", arg125_1: "f32[1024]", arg126_1: "f32[1024, 1024]", arg127_1: "f32[1024]", arg128_1: "f32[4096, 1024]", arg129_1: "f32[4096]", arg130_1: "f32[1024, 4096]", arg131_1: "f32[1024]", arg132_1: "f32[3072, 1024]", arg133_1: "f32[3072]", arg134_1: "f32[1024, 1024]", arg135_1: "f32[1024]", arg136_1: "f32[1024, 1024]", arg137_1: "f32[1024]", arg138_1: "f32[4096, 1024]", arg139_1: "f32[4096]", arg140_1: "f32[1024, 4096]", arg141_1: "f32[1024]", arg142_1: "f32[3072, 1024]", arg143_1: "f32[3072]", arg144_1: "f32[1024, 1024]", arg145_1: "f32[1024]", arg146_1: "f32[1024, 1024]", arg147_1: "f32[1024]", arg148_1: "f32[4096, 1024]", arg149_1: "f32[4096]", arg150_1: "f32[1024, 4096]", arg151_1: "f32[1024]", arg152_1: "f32[3072, 1024]", arg153_1: "f32[3072]", arg154_1: "f32[1024, 1024]", arg155_1: "f32[1024]", arg156_1: "f32[1024, 1024]", arg157_1: "f32[1024]", arg158_1: "f32[4096, 1024]", arg159_1: "f32[4096]", arg160_1: "f32[1024, 4096]", arg161_1: "f32[1024]", arg162_1: "f32[3072, 1024]", arg163_1: "f32[3072]", arg164_1: "f32[1024, 1024]", arg165_1: "f32[1024]", arg166_1: "f32[1024, 1024]", arg167_1: "f32[1024]", arg168_1: "f32[4096, 1024]", arg169_1: "f32[4096]", arg170_1: "f32[1024, 4096]", arg171_1: "f32[1024]", arg172_1: "f32[3072, 1024]", arg173_1: "f32[3072]", arg174_1: "f32[1024, 1024]", arg175_1: "f32[1024]", arg176_1: "f32[1024, 1024]", arg177_1: "f32[1024]", arg178_1: "f32[4096, 1024]", arg179_1: "f32[4096]", arg180_1: "f32[1024, 4096]", arg181_1: "f32[1024]", arg182_1: "f32[3072, 1024]", arg183_1: "f32[3072]", arg184_1: "f32[1024, 1024]", arg185_1: "f32[1024]", arg186_1: "f32[1024, 1024]", arg187_1: "f32[1024]", arg188_1: "f32[4096, 1024]", arg189_1: "f32[4096]", arg190_1: "f32[1024, 4096]", arg191_1: "f32[1024]", arg192_1: "f32[3072, 1024]", arg193_1: "f32[3072]", arg194_1: "f32[1024, 1024]", arg195_1: "f32[1024]", arg196_1: "f32[1024, 1024]", arg197_1: "f32[1024]", arg198_1: "f32[4096, 1024]", arg199_1: "f32[4096]", arg200_1: "f32[1024, 4096]", arg201_1: "f32[1024]", arg202_1: "f32[3072, 1024]", arg203_1: "f32[3072]", arg204_1: "f32[1024, 1024]", arg205_1: "f32[1024]", arg206_1: "f32[1024, 1024]", arg207_1: "f32[1024]", arg208_1: "f32[4096, 1024]", arg209_1: "f32[4096]", arg210_1: "f32[1024, 4096]", arg211_1: "f32[1024]", arg212_1: "f32[3072, 1024]", arg213_1: "f32[3072]", arg214_1: "f32[1024, 1024]", arg215_1: "f32[1024]", arg216_1: "f32[1024, 1024]", arg217_1: "f32[1024]", arg218_1: "f32[4096, 1024]", arg219_1: "f32[4096]", arg220_1: "f32[1024, 4096]", arg221_1: "f32[1024]", arg222_1: "f32[3072, 1024]", arg223_1: "f32[3072]", arg224_1: "f32[1024, 1024]", arg225_1: "f32[1024]", arg226_1: "f32[1024, 1024]", arg227_1: "f32[1024]", arg228_1: "f32[4096, 1024]", arg229_1: "f32[4096]", arg230_1: "f32[1024, 4096]", arg231_1: "f32[1024]", arg232_1: "f32[3072, 1024]", arg233_1: "f32[3072]", arg234_1: "f32[1024, 1024]", arg235_1: "f32[1024]", arg236_1: "f32[1024, 1024]", arg237_1: "f32[1024]", arg238_1: "f32[4096, 1024]", arg239_1: "f32[4096]", arg240_1: "f32[1024, 4096]", arg241_1: "f32[1024]", arg242_1: "f32[128, 13, 1, 1, 1]", arg243_1: "f32[128]", arg244_1: "f32[384, 128]", arg245_1: "f32[384]", arg246_1: "f32[128, 128]", arg247_1: "f32[128]", arg248_1: "f32[512, 128]", arg249_1: "f32[512]", arg250_1: "f32[128, 512]", arg251_1: "f32[128]", arg252_1: "f32[1024, 1, 5, 5]", arg253_1: "f32[1024]", arg254_1: "f32[768, 1024]", arg255_1: "f32[768]", arg256_1: "f32[384, 128]", arg257_1: "f32[384]", arg258_1: "f32[128, 128]", arg259_1: "f32[128]", arg260_1: "f32[512, 128]", arg261_1: "f32[512]", arg262_1: "f32[128, 512]", arg263_1: "f32[128]", arg264_1: "f32[1024, 1, 5, 5]", arg265_1: "f32[1024]", arg266_1: "f32[768, 1024]", arg267_1: "f32[768]", arg268_1: "f32[384, 128]", arg269_1: "f32[384]", arg270_1: "f32[128, 128]", arg271_1: "f32[128]", arg272_1: "f32[512, 128]", arg273_1: "f32[512]", arg274_1: "f32[128, 512]", arg275_1: "f32[128]", arg276_1: "f32[1024, 1, 5, 5]", arg277_1: "f32[1024]", arg278_1: "f32[768, 1024]", arg279_1: "f32[768]", arg280_1: "f32[384, 128]", arg281_1: "f32[384]", arg282_1: "f32[128, 128]", arg283_1: "f32[128]", arg284_1: "f32[512, 128]", arg285_1: "f32[512]", arg286_1: "f32[128, 512]", arg287_1: "f32[128]", arg288_1: "f32[1024, 1, 5, 5]", arg289_1: "f32[1024]", arg290_1: "f32[768, 1024]", arg291_1: "f32[768]", arg292_1: "f32[10, 128]", arg293_1: "f32[10]", arg294_1: "f32[0]", arg295_1: "f32[0]", arg296_1: "f32[1, 13, 24, 40, 40]", arg297_1: "f32[1, 2, 40, 40]"):
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/conv.py:735 in forward, code: return self._conv_forward(input, self.weight, self.bias)
+    conv3d: "f32[1, 1024, 24, 10, 10]" = torch.ops.aten.conv3d.default(arg296_1, arg0_1, arg1_1, [1, 4, 4]);  arg296_1 = arg0_1 = arg1_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/strata.py:499 in forward, code: backbone_cond, backbone_dhw = self.backbone.forward_tokens(x, pos)
+    permute: "f32[1, 24, 10, 10, 1024]" = torch.ops.aten.permute.default(conv3d, [0, 2, 3, 4, 1]);  conv3d = None
+    reshape: "f32[1, 2400, 1024]" = torch.ops.aten.reshape.default(permute, [1, 2400, 1024]);  permute = None
+    select: "f32[1, 40, 40]" = torch.ops.aten.select.int(arg297_1, 1, 0)
+    select_1: "f32[1, 40, 40]" = torch.ops.aten.select.int(arg297_1, 1, 1);  arg297_1 = None
+    cos: "f32[1, 40, 40]" = torch.ops.aten.cos.default(select)
+    cos_1: "f32[1, 40, 40]" = torch.ops.aten.cos.default(select_1)
+    mul: "f32[1, 40, 40]" = torch.ops.aten.mul.Tensor(cos, cos_1);  cos_1 = None
+    mean: "f32[1, 1, 1]" = torch.ops.aten.mean.dim(mul, [1, 2], True);  mul = None
+    sin: "f32[1, 40, 40]" = torch.ops.aten.sin.default(select_1)
+    mul_1: "f32[1, 40, 40]" = torch.ops.aten.mul.Tensor(cos, sin);  cos = sin = None
+    mean_1: "f32[1, 1, 1]" = torch.ops.aten.mean.dim(mul_1, [1, 2], True);  mul_1 = None
+    sin_1: "f32[1, 40, 40]" = torch.ops.aten.sin.default(select)
+    mean_2: "f32[1, 1, 1]" = torch.ops.aten.mean.dim(sin_1, [1, 2], True);  sin_1 = None
+    hypot: "f32[1, 1, 1]" = torch.ops.aten.hypot.default(mean, mean_1)
+    atan2: "f32[1, 1, 1]" = torch.ops.aten.atan2.default(mean_2, hypot);  mean_2 = hypot = None
+    atan2_1: "f32[1, 1, 1]" = torch.ops.aten.atan2.default(mean_1, mean);  mean_1 = mean = None
+    reshape_1: "f32[1, 10, 4, 10, 4]" = torch.ops.aten.reshape.default(select, [1, 10, 4, 10, 4]);  select = None
+    permute_1: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.permute.default(reshape_1, [0, 1, 3, 2, 4]);  reshape_1 = None
+    reshape_2: "f32[1, 10, 4, 10, 4]" = torch.ops.aten.reshape.default(select_1, [1, 10, 4, 10, 4]);  select_1 = None
+    permute_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.permute.default(reshape_2, [0, 1, 3, 2, 4]);  reshape_2 = None
+    cos_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.cos.default(permute_1)
+    cos_3: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.cos.default(permute_2)
+    mul_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.mul.Tensor(cos_2, cos_3);  cos_3 = None
+    mean_3: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.mean.dim(mul_2, [3, 4], True);  mul_2 = None
+    sin_2: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.sin.default(permute_2);  permute_2 = None
+    mul_3: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.mul.Tensor(cos_2, sin_2);  cos_2 = sin_2 = None
+    mean_4: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.mean.dim(mul_3, [3, 4], True);  mul_3 = None
+    sin_3: "f32[1, 10, 10, 4, 4]" = torch.ops.aten.sin.default(permute_1);  permute_1 = None
+    mean_5: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.mean.dim(sin_3, [3, 4], True);  sin_3 = None
+    hypot_1: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.hypot.default(mean_3, mean_4)
+    atan2_2: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.atan2.default(mean_5, hypot_1);  mean_5 = hypot_1 = None
+    atan2_3: "f32[1, 10, 10, 1, 1]" = torch.ops.aten.atan2.default(mean_4, mean_3);  mean_4 = mean_3 = None
+    squeeze: "f32[1, 10, 10]" = torch.ops.aten.squeeze.dims(atan2_2, [-2, -1]);  atan2_2 = None
+    squeeze_1: "f32[1, 10, 10]" = torch.ops.aten.squeeze.dims(atan2_3, [-2, -1]);  atan2_3 = None
+    sub: "f32[1, 10, 10]" = torch.ops.aten.sub.Tensor(squeeze_1, atan2_1);  squeeze_1 = atan2_1 = None
+    sin_4: "f32[1, 1, 1]" = torch.ops.aten.sin.default(atan2)
+    sin_5: "f32[1, 10, 10]" = torch.ops.aten.sin.default(squeeze)
+    mul_4: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(sin_4, sin_5);  sin_4 = sin_5 = None
+    cos_4: "f32[1, 1, 1]" = torch.ops.aten.cos.default(atan2)
+    cos_5: "f32[1, 10, 10]" = torch.ops.aten.cos.default(squeeze)
+    mul_5: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(cos_4, cos_5);  cos_4 = cos_5 = None
+    cos_6: "f32[1, 10, 10]" = torch.ops.aten.cos.default(sub)
+    mul_6: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_5, cos_6);  mul_5 = cos_6 = None
+    add: "f32[1, 10, 10]" = torch.ops.aten.add.Tensor(mul_4, mul_6);  mul_4 = mul_6 = None
+    add_1: "f32[1, 10, 10]" = torch.ops.aten.add.Tensor(add, 1.0);  add = None
+    clamp_min: "f32[1, 10, 10]" = torch.ops.aten.clamp_min.default(add_1, 1e-06);  add_1 = None
+    reciprocal: "f32[1, 10, 10]" = torch.ops.aten.reciprocal.default(clamp_min);  clamp_min = None
+    mul_7: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(reciprocal, 2.0);  reciprocal = None
+    cos_7: "f32[1, 10, 10]" = torch.ops.aten.cos.default(squeeze)
+    mul_8: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_7, cos_7);  cos_7 = None
+    sin_6: "f32[1, 10, 10]" = torch.ops.aten.sin.default(sub)
+    mul_9: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_8, sin_6);  mul_8 = sin_6 = None
+    cos_8: "f32[1, 1, 1]" = torch.ops.aten.cos.default(atan2)
+    sin_7: "f32[1, 10, 10]" = torch.ops.aten.sin.default(squeeze)
+    mul_10: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(cos_8, sin_7);  cos_8 = sin_7 = None
+    sin_8: "f32[1, 1, 1]" = torch.ops.aten.sin.default(atan2);  atan2 = None
+    cos_9: "f32[1, 10, 10]" = torch.ops.aten.cos.default(squeeze);  squeeze = None
+    mul_11: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(sin_8, cos_9);  sin_8 = cos_9 = None
+    cos_10: "f32[1, 10, 10]" = torch.ops.aten.cos.default(sub);  sub = None
+    mul_12: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_11, cos_10);  mul_11 = cos_10 = None
+    sub_1: "f32[1, 10, 10]" = torch.ops.aten.sub.Tensor(mul_10, mul_12);  mul_10 = mul_12 = None
+    mul_13: "f32[1, 10, 10]" = torch.ops.aten.mul.Tensor(mul_7, sub_1);  mul_7 = sub_1 = None
+    div: "f32[1, 10, 10]" = torch.ops.aten.div.Tensor(mul_9, 0.003997369952915971);  mul_9 = None
+    div_1: "f32[1, 10, 10]" = torch.ops.aten.div.Tensor(mul_13, 0.003997369952915971);  mul_13 = None
+    stack: "f32[1, 10, 10, 2]" = torch.ops.aten.stack.default([div, div_1], -1);  div = div_1 = None
+    reshape_3: "f32[1, 100, 2]" = torch.ops.aten.reshape.default(stack, [1, 100, 2]);  stack = None
+    unsqueeze: "f32[1, 1, 100, 2]" = torch.ops.aten.unsqueeze.default(reshape_3, 1);  reshape_3 = None
+    expand: "f32[1, 24, 100, 2]" = torch.ops.aten.expand.default(unsqueeze, [-1, 24, -1, -1]);  unsqueeze = None
+    reshape_4: "f32[1, 2400, 2]" = torch.ops.aten.reshape.default(expand, [1, 2400, 2]);  expand = None
+    select_2: "f32[1, 2400]" = torch.ops.aten.select.int(reshape_4, 2, 0)
+    select_3: "f32[1, 2400]" = torch.ops.aten.select.int(reshape_4, 2, 1);  reshape_4 = None
+    arange: "f32[16]" = torch.ops.aten.arange.start_step(0, 32, 2, dtype = torch.float32, device = device(type='cpu'), pin_memory = False)
+    neg: "f32[16]" = torch.ops.aten.neg.default(arange);  arange = None
+    div_2: "f32[16]" = torch.ops.aten.div.Tensor(neg, 32);  neg = None
+    pow_1: "f32[16]" = torch.ops.aten.pow.Scalar(100.0, div_2);  div_2 = None
+    to: "f32[1, 2400]" = torch.ops.aten.to.dtype(select_2, torch.float32);  select_2 = None
+    unsqueeze_1: "f32[1, 2400, 1]" = torch.ops.aten.unsqueeze.default(to, -1);  to = None
+    mul_14: "f32[1, 2400, 16]" = torch.ops.aten.mul.Tensor(unsqueeze_1, pow_1);  unsqueeze_1 = pow_1 = None
+    cos_11: "f32[1, 2400, 16]" = torch.ops.aten.cos.default(mul_14)
+    repeat_interleave: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(cos_11, 2, -1);  cos_11 = None
+    sin_9: "f32[1, 2400, 16]" = torch.ops.aten.sin.default(mul_14);  mul_14 = None
+    repeat_interleave_1: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(sin_9, 2, -1);  sin_9 = None
+    arange_1: "f32[16]" = torch.ops.aten.arange.start_step(0, 32, 2, dtype = torch.float32, device = device(type='cpu'), pin_memory = False)
+    neg_1: "f32[16]" = torch.ops.aten.neg.default(arange_1);  arange_1 = None
+    div_3: "f32[16]" = torch.ops.aten.div.Tensor(neg_1, 32);  neg_1 = None
+    pow_2: "f32[16]" = torch.ops.aten.pow.Scalar(100.0, div_3);  div_3 = None
+    to_1: "f32[1, 2400]" = torch.ops.aten.to.dtype(select_3, torch.float32);  select_3 = None
+    unsqueeze_2: "f32[1, 2400, 1]" = torch.ops.aten.unsqueeze.default(to_1, -1);  to_1 = None
+    mul_15: "f32[1, 2400, 16]" = torch.ops.aten.mul.Tensor(unsqueeze_2, pow_2);  unsqueeze_2 = pow_2 = None
+    cos_12: "f32[1, 2400, 16]" = torch.ops.aten.cos.default(mul_15)
+    repeat_interleave_2: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(cos_12, 2, -1);  cos_12 = None
+    sin_10: "f32[1, 2400, 16]" = torch.ops.aten.sin.default(mul_15);  mul_15 = None
+    repeat_interleave_3: "f32[1, 2400, 32]" = torch.ops.aten.repeat_interleave.self_int(sin_10, 2, -1);  sin_10 = None
+    cat: "f32[1, 2400, 64]" = torch.ops.aten.cat.default([repeat_interleave, repeat_interleave_2], -1);  repeat_interleave = repeat_interleave_2 = None
+    cat_1: "f32[1, 2400, 64]" = torch.ops.aten.cat.default([repeat_interleave_1, repeat_interleave_3], -1);  repeat_interleave_1 = repeat_interleave_3 = None
+    unsqueeze_3: "f32[1, 1, 2400, 64]" = torch.ops.aten.unsqueeze.default(cat, 1);  cat = None
+    unsqueeze_4: "f32[1, 1, 2400, 64]" = torch.ops.aten.unsqueeze.default(cat_1, 1);  cat_1 = None
+    _enter_autocast = torch.amp.autocast_mode._enter_autocast('cuda', torch.bfloat16, False, False)
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py:228 in forward, code: return F.layer_norm(
+    layer_norm: "f32[1, 2400, 1024]" = torch.ops.aten.layer_norm.default(reshape, [1024], None, None, 1e-06, False);  reshape = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py:134 in forward, code: return F.linear(input, self.weight, self.bias)
+    linear: "f32[1, 2400, 1024]" = torch.ops.aten.linear.default(layer_norm, arg6_1, arg7_1);  arg6_1 = arg7_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:216 in forward, code: gate = torch.sigmoid(self.gate_proj(x))  # (B, N, C)
+    sigmoid: "f32[1, 2400, 1024]" = torch.ops.aten.sigmoid.default(linear);  linear = sigmoid = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py:134 in forward, code: return F.linear(input, self.weight, self.bias)
+    linear_1: "f32[1, 2400, 3072]" = torch.ops.aten.linear.default(layer_norm, arg2_1, arg3_1);  layer_norm = arg2_1 = arg3_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:219 in forward, code: qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim)
+    reshape_5: "f32[1, 2400, 3, 16, 64]" = torch.ops.aten.reshape.default(linear_1, [1, 2400, 3, 16, 64]);  linear_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:220 in forward, code: q, k, v = qkv.permute(2, 0, 3, 1, 4).unbind(0)
+    permute_3: "f32[3, 1, 16, 2400, 64]" = torch.ops.aten.permute.default(reshape_5, [2, 0, 3, 1, 4]);  reshape_5 = None
+    unbind = torch.ops.aten.unbind.int(permute_3);  permute_3 = None
+    getitem: "f32[1, 16, 2400, 64]" = unbind[0]
+    getitem_1: "f32[1, 16, 2400, 64]" = unbind[1]
+    getitem_2: "f32[1, 16, 2400, 64]" = unbind[2];  unbind = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py:427 in forward, code: return F.rms_norm(x, self.normalized_shape, self.weight, self.eps)
+    rms_norm: "f32[1, 16, 2400, 64]" = torch.ops.aten.rms_norm.default(getitem, [64], None, 1e-06);  getitem = None
+    rms_norm_1: "f32[1, 16, 2400, 64]" = torch.ops.aten.rms_norm.default(getitem_1, [64], None, 1e-06);  getitem_1 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:226 in forward, code: q = apply_rotary_pos_emb(q, cos, sin)
+    to_2: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(rms_norm, torch.float32);  rms_norm = None
+    slice_1: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_2, 3, 0, 9223372036854775807, 2)
+    slice_2: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_2, 3, 1, 9223372036854775807, 2)
+    neg_2: "f32[1, 16, 2400, 32]" = torch.ops.aten.neg.default(slice_2);  slice_2 = None
+    stack_1: "f32[1, 16, 2400, 32, 2]" = torch.ops.aten.stack.default([neg_2, slice_1], -1);  neg_2 = slice_1 = None
+    flatten: "f32[1, 16, 2400, 64]" = torch.ops.aten.flatten.using_ints(stack_1, -2);  stack_1 = None
+    mul_16: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(to_2, unsqueeze_3);  to_2 = None
+    mul_17: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(flatten, unsqueeze_4);  flatten = None
+    add_2: "f32[1, 16, 2400, 64]" = torch.ops.aten.add.Tensor(mul_16, mul_17);  mul_16 = mul_17 = None
+    to_3: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(add_2, torch.float32);  add_2 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:227 in forward, code: k = apply_rotary_pos_emb(k, cos, sin)
+    to_4: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(rms_norm_1, torch.float32);  rms_norm_1 = None
+    slice_3: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_4, 3, 0, 9223372036854775807, 2)
+    slice_4: "f32[1, 16, 2400, 32]" = torch.ops.aten.slice.Tensor(to_4, 3, 1, 9223372036854775807, 2)
+    neg_3: "f32[1, 16, 2400, 32]" = torch.ops.aten.neg.default(slice_4);  slice_4 = None
+    stack_2: "f32[1, 16, 2400, 32, 2]" = torch.ops.aten.stack.default([neg_3, slice_3], -1);  neg_3 = slice_3 = None
+    flatten_1: "f32[1, 16, 2400, 64]" = torch.ops.aten.flatten.using_ints(stack_2, -2);  stack_2 = None
+    mul_18: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(to_4, unsqueeze_3);  to_4 = unsqueeze_3 = None
+    mul_19: "f32[1, 16, 2400, 64]" = torch.ops.aten.mul.Tensor(flatten_1, unsqueeze_4);  flatten_1 = unsqueeze_4 = None
+    add_3: "f32[1, 16, 2400, 64]" = torch.ops.aten.add.Tensor(mul_18, mul_19);  mul_18 = mul_19 = None
+    to_5: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(add_3, torch.float32);  add_3 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:230 in forward, code: q = q.to(v.dtype)
+    to_6: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(to_3, torch.float32);  to_3 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:231 in forward, code: k = k.to(v.dtype)
+    to_7: "f32[1, 16, 2400, 64]" = torch.ops.aten.to.dtype(to_5, torch.float32);  to_5 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:272 in forward, code: q, k, v = (
+    reshape_6: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.reshape.default(to_6, [1, 16, 24, 10, 10, 64]);  to_6 = None
+    permute_4: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.permute.default(reshape_6, [0, 2, 3, 4, 1, 5]);  reshape_6 = None
+    reshape_7: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.reshape.default(to_7, [1, 16, 24, 10, 10, 64]);  to_7 = None
+    permute_5: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.permute.default(reshape_7, [0, 2, 3, 4, 1, 5]);  reshape_7 = None
+    reshape_8: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.reshape.default(getitem_2, [1, 16, 24, 10, 10, 64]);  getitem_2 = None
+    permute_6: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.permute.default(reshape_8, [0, 2, 3, 4, 1, 5]);  reshape_8 = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/layers.py:276 in forward, code: out = _na3d_func(
+    empty_like: "f32[1, 24, 10, 10, 16, 64]" = torch.ops.aten.empty_like.default(permute_4, pin_memory = False);  empty_like = None
+    permute_7: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.permute.default(permute_4, [0, 4, 1, 2, 3, 5]);  permute_4 = permute_7 = None
+    permute_8: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.permute.default(permute_5, [0, 4, 1, 2, 3, 5]);  permute_5 = permute_8 = None
+    permute_9: "f32[1, 16, 24, 10, 10, 64]" = torch.ops.aten.permute.default(permute_6, [0, 4, 1, 2, 3, 5]);  permute_6 = permute_9 = None
+    arange_2: "i64[24]" = torch.ops.aten.arange.default(24, device = device(type='cpu'), pin_memory = False)
+    sub_2: "i64[24]" = torch.ops.aten.sub.Tensor(arange_2, 4);  arange_2 = None
+    clamp: "i64[24]" = torch.ops.aten.clamp.default(sub_2, 0, 15);  sub_2 = None
+    select_4: "i64[]" = torch.ops.aten.select.int(clamp, 0, 0);  clamp = None
+    item: "Sym(u0)" = torch.ops.aten.item.default(select_4);  select_4 = item = None
+    
+    # File: /home/alex/Desktop/STRATA_WASM_INT8/.venv/lib/python3.12/site-packages/physicsnemo/experimental/models/strata/strata.py:499 in forward, code: backbone_cond, backbone_dhw = self.backbone.forward_tokens(x, pos)
+    _exit_autocast = torch.amp.autocast_mode._exit_autocast(_enter_autocast);  _enter_autocast = _exit_autocast = None
+    
+[torch.onnx] Obtain model graph for `Strata([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `Strata([...]` with `torch.export.export(..., strict=False)`... ❌
+[torch.onnx] Obtain model graph for `Strata([...]` with `torch.export.export(..., strict=True)`...
+[torch.onnx] Obtain model graph for `Strata([...]` with `torch.export.export(..., strict=True)`... ❌
+A: {
+ "torchscript": {
+  "ok": false,
+  "error": "RuntimeError: Unsupported value kind: Tensor"
+ },
+ "dynamo": {
+  "ok": false,
+  "error": "TorchExportError: Failed to export the model with torch.export. \u001b[96mThis is step 1/3\u001b[0m of exporting the model to ONNX. Next steps:"
+ }
+}
+C: {
+ "24x24x24x16h": {
+  "export_s": 22.439674854278564,
+  "onnx_nodes": 3144,
+  "ms": [
+   7645.0354019999995,
+   6406.0256629999985
+  ],
+  "max_abs_vs_chunked": 3.2782554626464844e-07,
+  "rel_l2": 2.836285659668647e-07
+ }
+}
+C: {
+ "24x24x24x16h": {
+  "export_s": 22.439674854278564,
+  "onnx_nodes": 3144,
+  "ms": [
+   7645.0354019999995,
+   6406.0256629999985
+  ],
+  "max_abs_vs_chunked": 3.2782554626464844e-07,
+  "rel_l2": 2.836285659668647e-07
+ },
+ "24x96x96x2h": {
+  "export_s": 128.36002779006958,
+  "onnx_nodes": 45624,
+  "ms": [
+   21163.101111000004,
+   20386.504102000006
+  ],
+  "max_abs_vs_chunked": 3.5762786865234375e-07,
+  "rel_l2": 2.758851564976794e-07
+ }
+}
+wrote /home/alex/Desktop/STRATA_WASM_INT8/logs/ort_experiment.json
+EXIT 0

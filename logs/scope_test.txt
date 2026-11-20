@@ -1,0 +1,4 @@
+INT8 emulation: replaced 140 linear layers (activations 16-bit per token)
+wrote /home/alex/Desktop/STRATA_WASM_INT8/data/puntarenas/reference_int8_scope_all.nc; mean step 448.2s
+INT8 emulation: replaced 120 linear layers (activations 16-bit per token)
+wrote /home/alex/Desktop/STRATA_WASM_INT8/data/puntarenas/reference_int8_scope_strata.backbone.nc; mean step 379.6s

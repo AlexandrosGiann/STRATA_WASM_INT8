@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STRATA WASM INT8</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --muted:#6b6b66; --card:#fff; --line:#e2e2dc; --accent:#2a6f97; --bad:#b3261e; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#151514; --fg:#ececea; --muted:#9a9a94; --card:#1f1f1d; --line:#33332f; --accent:#7fb7d9; --bad:#f2b8b5; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 system-ui, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  p.sub { color: var(--muted); margin: 0 0 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: end; }
+  label { display: flex; flex-direction: column; font-size: .8rem; color: var(--muted); gap: 4px; }
+  select, input, button { font: inherit; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+  button { background: var(--accent); color: #fff; border: 0; padding: 8px 16px; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  #log { font: 12px/1.4 ui-monospace, monospace; white-space: pre-wrap; max-height: 220px; overflow: auto; color: var(--muted); margin: 0; }
+  .bar { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin-top: 8px; }
+  .bar > div { height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+  .maps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .maps figure { margin: 0; }
+  .maps canvas { width: 100%; aspect-ratio: 1; image-rendering: pixelated; border-radius: 6px; border: 1px solid var(--line); }
+  figcaption { font-size: .78rem; color: var(--muted); }
+  table { border-collapse: collapse; width: 100%; font-size: .82rem; font-variant-numeric: tabular-nums; }
+  th, td { padding: 4px 6px; border-bottom: 1px solid var(--line); text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  .tablewrap { overflow-x: auto; }
+  .err { color: var(--bad); }
+  @media (max-width: 600px) { .maps { grid-template-columns: 1fr 1fr 1fr; gap: 4px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>STRATA v1 INT8 στον browser</h1>
+  <p class="sub">Πρόγνωση για μία πόλη με WebAssembly. Τα βάρη INT8 και τα δεδομένα της περιοχής φορτώνονται τοπικά· κάθε βήμα είναι 10 λεπτά.</p>
+
+  <div class="card controls">
+    <label>Πόλη <select id="city"></select></label>
+    <label>Βήματα <select id="steps"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option selected>6</option></select></label>
+    <label>Threads <input id="threads" type="number" min="1" max="16" value="4" style="width:5em"></label>
+    <label>Ενεργοποιήσεις <select id="bits"><option value="16" selected>INT16 (W8A16)</option><option value="8">INT8 (W8A8)</option></select></label>
+    <label>Βάρη <select id="wfile"><option value="strata_v1_int8.bin" selected>INT8 per-channel (319 MiB)</option><option value="strata_v1_int8_g128.bin">INT8 group-128 (328 MiB)</option></select></label>
+    <button id="run">Εκτέλεση</button>
+  </div>
+
+  <div class="card">
+    <pre id="log"></pre>
+    <div class="bar"><div id="bar"></div></div>
+    <div id="status" style="font-size:.8rem;color:var(--muted);margin-top:6px"></div>
+  </div>
+
+  <div class="card">
+    <div id="maptitle" style="margin-bottom:8px;font-size:.9rem">Χάρτες: browser INT8 · PyTorch FP32 · διαφορά</div>
+    <div class="maps" id="maps"></div>
+  </div>
+
+  <div class="card tablewrap">
+    <div style="margin-bottom:6px;font-size:.9rem">Απόκλιση browser − PyTorch FP32 (εσωτερικό περιοχής, χωρίς το halo)</div>
+    <table id="tbl"><thead><tr><th>Βήμα</th><th>Πεδίο</th><th>RMSE</th><th>max |Δ|</th><th>bias</th><th>rel L2</th><th>χρόνος βήματος</th></tr></thead><tbody></tbody></table>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

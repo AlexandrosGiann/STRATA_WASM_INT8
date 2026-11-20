@@ -1,0 +1,7 @@
+(1, 5, 7, 9, 2, 8) k=3: max|natten-chunked| run1=1.19e-07 run2=1.19e-07; positions >1e-5: 0; chunked vs direct definition there: 0.00e+00 (natten 0.0s/run, chunked 0.0s)
+(2, 9, 9, 11, 3, 16) k=5: max|natten-chunked| run1=7.15e-07 run2=7.15e-07; positions >1e-5: 0; chunked vs direct definition there: 0.00e+00 (natten 0.2s/run, chunked 0.0s)
+(1, 10, 12, 9, 2, 32) k=(3, 5, 9): max|natten-chunked| run1=2.98e-07 run2=2.98e-07; positions >1e-5: 0; chunked vs direct definition there: 0.00e+00 (natten 0.2s/run, chunked 0.0s)
+(1, 24, 32, 32, 2, 64) k=9: max|natten-chunked| run1=2.38e-07 run2=2.38e-07; positions >1e-5: 0; chunked vs direct definition there: 0.00e+00 (natten 173.7s/run, chunked 0.8s)
+(1, 24, 24, 24, 16, 64) k=9: max|natten-chunked| run1=2.98e-07 run2=2.85e-03; positions >1e-5: 3; chunked vs direct definition there: 2.98e-07 (natten 520.5s/run, chunked 7.7s)
+OK
+EXIT 0

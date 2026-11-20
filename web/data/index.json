@@ -1,0 +1,28 @@
+{
+ "cities": [
+  {
+   "name": "athens",
+   "label": "athens 96x96",
+   "lat": 37.98,
+   "lon": 23.73,
+   "tile": 96,
+   "steps": 6
+  },
+  {
+   "name": "athens64",
+   "label": "athens 64x64",
+   "lat": 37.98,
+   "lon": 23.73,
+   "tile": 64,
+   "steps": 6
+  },
+  {
+   "name": "puntarenas",
+   "label": "puntarenas 96x96",
+   "lat": 9.98,
+   "lon": -84.84,
+   "tile": 96,
+   "steps": 6
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+[strata] crossOriginIsolated=true (threads διαθέσιμα), cores=4, deviceMemory=16 GB
+[bench] worker created http://127.0.0.1:8765/strata_mt_worker.js
+[bench] worker created http://127.0.0.1:8765/strata_mt_worker.js
+[bench] worker created http://127.0.0.1:8765/strata_mt_worker.js
+[bench] worker created http://127.0.0.1:8765/strata_mt_worker.js
+[bench] worker created http://127.0.0.1:8765/strata_mt_worker.js
+[strata] engine module instantiated
+[strata] engine: pthreads (4 threads), crossOriginIsolated=true, activations 16-bit
+[strata] weights: 319.0 MiB INT8 file, 434 tensors bound, 1.1 s
+[strata] region athens: 96x96 cells (interior 64, halo 16), 24 levels; work buffers 863 MiB; WASM memory 1229 MiB
+[strata] βήμα 1/6 (+10′): 287.1 s (semantic 198.8 s, pixel 88.2 s) · ΔT2m RMSE 5.05e-3 K · WASM 1229 MiB
+[strata] βήμα 2/6 (+20′): 282.4 s (semantic 194.2 s, pixel 88.2 s) · ΔT2m RMSE 9.69e-3 K · WASM 1229 MiB
+[strata] βήμα 3/6 (+30′): 286.8 s (semantic 195.8 s, pixel 90.9 s) · ΔT2m RMSE 1.42e-2 K · WASM 1229 MiB
+[strata] βήμα 4/6 (+40′): 282.4 s (semantic 194.0 s, pixel 88.4 s) · ΔT2m RMSE 1.88e-2 K · WASM 1229 MiB
+[strata] βήμα 5/6 (+50′): 283.6 s (semantic 195.3 s, pixel 88.2 s) · ΔT2m RMSE 2.34e-2 K · WASM 1229 MiB
+[strata] βήμα 6/6 (+60′): 289.9 s (semantic 198.8 s, pixel 91.1 s) · ΔT2m RMSE 2.81e-2 K · WASM 1229 MiB
+[strata] τέλος: 6 βήματα, μέσος χρόνος/βήμα 285.4 s, μέγιστη μνήμη WASM 1229 MiB
+wrote /home/alex/Desktop/STRATA_WASM_INT8/logs/browser_bench_athens_t4_a16.json
+mean step 285.4 s, WASM peak 1229 MiB, Chrome RSS peak: largest process 1513 MiB, tree 2350 MiB
+EXIT 0

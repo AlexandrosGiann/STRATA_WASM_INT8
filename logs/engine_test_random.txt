@@ -1,0 +1,13 @@
+Warp CUDA warning: Could not find or load the NVIDIA CUDA driver. GPU execution will not be available.
+INT8 emulation: replaced 140 linear layers (activations 16-bit per token)
+checkpoint     wasm vs int8-emul (relL2, max)      wasm vs fp32 (relL2, max)      int8-emul vs fp32
+sem0             5.37e-06     4.42e-02          3.58e-03     1.11e+01     3.58e-03   1.11e+01
+sem1             6.44e-06     4.39e-02          3.70e-03     1.06e+01     3.70e-03   1.06e+01
+sem23            1.12e-03     2.88e+02          6.97e-02     2.09e+04     6.96e-02   2.08e+04
+pix0             1.52e-03     3.57e+01          7.76e-02     7.55e+02     7.76e-02   7.54e+02
+pix1             2.26e-03     1.26e+02          1.31e-01     1.80e+03     1.31e-01   1.79e+03
+pix2             2.09e-03     3.42e+02          1.12e-01     4.70e+03     1.12e-01   4.68e+03
+pix3             2.12e-03     3.26e+02          1.11e-01     4.69e+03     1.11e-01   4.67e+03
+out                   nan          nan               nan          nan     1.97e-01   1.07e+02
+{"ms": 294485.81645700004, "nthreads": 4, "bound": 434, "work_mib": 1187, "heap_mib": 2212.5, "semantic_ms": 205070.439453125, "pixel_ms": 89414.38818359375, "attention_ms": 65729.07666015625, "linear_and_rest_ms": 226603.91040039062}
+EXIT 0

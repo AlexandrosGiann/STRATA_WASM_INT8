@@ -1,0 +1,10 @@
+Warp CUDA warning: Could not find or load the NVIDIA CUDA driver. GPU execution will not be available.
+model loaded in 63s
+step 1/6: 239.0s
+step 2/6: 236.5s
+step 3/6: 242.2s
+step 4/6: 241.9s
+step 5/6: 241.2s
+step 6/6: 241.9s
+wrote /home/alex/Desktop/STRATA_WASM_INT8/data/puntarenas/reference_fp32.nc; mean step 240.4s
+wrote capture.npz: {'strata_in': (1, 13, 24, 96, 96), 'pos': (1, 2, 96, 96), 'sem_patch_embed': (1, 1024, 24, 24, 24), 'rope_cos': (1, 1, 13824, 64), 'rope_sin': (1, 1, 13824, 64), 'sem_block0': (1, 13824, 1024), 'sem_block1': (1, 13824, 1024), 'sem_block2': (1, 13824, 1024), 'sem_block3': (1, 13824, 1024), 'sem_block23': (1, 13824, 1024), 'pix_patch_embed': (1, 128, 24, 96, 96), 'pix_block0': (1, 221184, 128), 'pix_block1': (1, 221184, 128), 'pix_block2': (1, 221184, 128), 'pix_block3': (1, 221184, 128), 'strata_out': (1, 10, 24, 96, 96), 'wind_fwd': (4, 96, 96), 'wind_inv': (4, 96, 96), 'forcing_per_step': (6, 4, 96, 96), 'lat_rad': (96, 96)}

@@ -1,0 +1,57 @@
+{
+ "A_full_export": {
+  "torchscript": {
+   "ok": false,
+   "error": "RuntimeError: Unsupported value kind: Tensor"
+  },
+  "dynamo": {
+   "ok": false,
+   "error": "TorchExportError: Failed to export the model with torch.export. \u001b[96mThis is step 1/3\u001b[0m of exporting the model to ONNX. Next steps:"
+  }
+ },
+ "C_na3d_onnx_ops": {
+  "24x24x24x16h": {
+   "export_s": 22.439674854278564,
+   "onnx_nodes": 3144,
+   "ms": [
+    7645.0354019999995,
+    6406.0256629999985
+   ],
+   "max_abs_vs_chunked": 3.2782554626464844e-07,
+   "rel_l2": 2.836285659668647e-07
+  },
+  "24x96x96x2h": {
+   "export_s": 128.36002779006958,
+   "onnx_nodes": 45624,
+   "ms": [
+    21163.101111000004,
+    20386.504102000006
+   ],
+   "max_abs_vs_chunked": 3.5762786865234375e-07,
+   "rel_l2": 2.758851564976794e-07
+  }
+ },
+ "B_dense_block": {
+  "fp32": {
+   "ms": [
+    11326.231339,
+    10807.269086999999
+   ],
+   "rel_l2_vs_torch_fp32": 5.805831051475252e-07,
+   "file_mib": 52.05892467498779
+  },
+  "int8": {
+   "ms": [
+    9986.302961,
+    6535.977111000002
+   ],
+   "rel_l2_vs_torch_fp32": 0.053603395819664,
+   "file_mib": 13.11465072631836
+  },
+  "ort": {
+   "common": "1.31.1",
+   "web": "1.31.1"
+  },
+  "gemm_gmac": 188.441690112
+ }
+}
